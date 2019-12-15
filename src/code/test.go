@@ -3,15 +3,14 @@ import (
     "fmt"
 )
 
-const (
-    KB float64 = 1 << (iota*10)
-    MB 
-    GB
-)
-
-
 func main() {
-    fmt.PrintLn(KB)
-    fmt.PrintLn(MB)
-    fmt.PrintLn(GB)
+	a := []int{1,2,3}
+	change(a)
+	fmt.Println(a)
+}
+
+func change(a []int) {
+	a[0] = 11
+	a[1] = 22
+	fmt.Println(a)
 }
